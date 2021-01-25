@@ -10,8 +10,6 @@ I have done all the coding by myself and only copied the code that my professor 
 #ifndef SDDS_UTILS_H
 #define SDDS_UTILS_H
 
-#include "ShoppingRec.h"
-
 namespace sdds
 {
 	void flushkeys();
