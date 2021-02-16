@@ -112,7 +112,9 @@ namespace sdds
 		for (int i = 0; i < noOfEmployees; i++)
 		{
 			delete[] employees[i].m_name;
+			employees[i].m_name = nullptr;
 		}
 		delete[] employees;
+		employees = nullptr;
 	}
 }
