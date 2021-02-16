@@ -20,6 +20,8 @@ namespace sdds
 	void CalorieList::setEmpty()
 	{
 		m_foods = nullptr;
+		m_size = 0;
+		m_foodsAdded = 0;
 	}
 
 	bool CalorieList::isValid()const
