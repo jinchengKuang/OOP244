@@ -33,7 +33,7 @@ namespace sdds
 
 	void Food::set(const char* name, int cals, int time)
 	{
-		if (name != nullptr && cals > 0 && time > 0)
+		if (name != nullptr && cals > 0 && cal < 3000 && time > 0)
 		{
 			setName(name);
 			m_calories = cals;
@@ -58,7 +58,7 @@ namespace sdds
 	bool Food::isValid()const
 	{
 		bool ok = false;
-		if (m_foodName != nullptr && m_foodName[0] != '\0' && (m_calories > 0 && m_calories <= 3000) && (isTimeValid()))
+		if (m_foodName != nullptr && m_foodName[0] != '\0' && (m_calories >= 0 && m_calories <= 3000) && (isTimeValid()))
 		{
 			ok = true;
 		}
