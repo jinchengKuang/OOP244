@@ -81,7 +81,7 @@ namespace sdds
 					loopBreak = true;
 					if (i == 0)
 					{
-						if (length > 1 && isdigit(userEnter[i + 1]))
+						if (length > 1 && userEnter[i] == '-' && isdigit(userEnter[i + 1]))
 						{
 							loopBreak = false;
 						}
